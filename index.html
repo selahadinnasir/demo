@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hierarchy UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tree">
+        <ul>
+            <li>
+                <div class="node">مجلس المساهمين</div>
+                <ul class="nested active"> <!-- Initially visible -->
+                    <li>
+                        <div class="node caret">مجلس الإدارة</div>
+                        <ul class="nested">
+                            <li>
+                                <div class="node caret">رئيس الهيئة</div>
+                                <ul class="nested">
+                                    <li>
+                                        <div class="node caret">اللجنة التنفيذية</div>
+                                        <ul class="nested">
+                                            <li><div class="node">لجنة الاستثمارات المالية</div></li>
+                                            <li><div class="node">لجنة التشغيل والاستثمار</div></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="node caret">مجلس التدقيق الداخلي</div>
+                                        <ul class="nested">
+                                            <li><div class="node">المراجعة الداخلية وإدارة المخاطر والاستقلال</div></li>
+                                            <li><div class="node">الشؤون القانونية</div></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="node">البحوث والتطوير وأداء الأعمال</div>
+                                    </li>
+                                    <li>
+                                        <div class="node">البحوث والتشغيل الدولي</div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
